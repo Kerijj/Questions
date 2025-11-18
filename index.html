@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אתר שאלות ותשובות (FAQ) - הנהלת חשבונות ספקים</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #F4F4F9; /* Light, warm background */
+            color: #212529; /* Dark text for readability */
+            line-height: 1.6;
+            text-align: right;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #495867; /* Muted Blue-Gray for title */
+            border-bottom: 2px solid #5B92A2;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Accordion Styling */
+        .accordion-item {
+            margin-bottom: 10px;
+            border: 1px solid #E9ECEF; /* Light border */
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #FFFFFF;
+        }
+
+        .accordion-button {
+            background-color: #5B92A2; /* Muted Cyan-Blue for button */
+            color: #FFFFFF;
+            cursor: pointer;
+            padding: 18px 20px;
+            width: 100%;
+            text-align: right;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            direction: rtl; /* Ensure button content is RTL */
+        }
+
+        .accordion-button:hover {
+            background-color: #495867; /* Darker hover state */
+        }
+
+        .accordion-button:after {
+            content: '◄'; /* Arrow/Chevron for indication */
+            font-size: 1.2em;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+            transform: rotate(0deg);
+        }
+
+        .accordion-button.active:after {
+            transform: rotate(-90deg);
+        }
+
+        .accordion-content {
+            padding: 0 20px;
+            background-color: #F8F9FA; /* Slightly lighter background for content */
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            direction: rtl; /* Ensure content is RTL */
+        }
+
+        .accordion-content p {
+            padding: 15px 0;
+            margin: 0;
+        }
+
+        /* Specific formatting for the content */
+        .accordion-content strong {
+            color: #495867; /* Highlight key terms */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🛠️ שאלות נפוצות (FAQ) - טיפול בחשבוניות ספק</h1>
+
+        <p>להלן פתרונות לבעיות נפוצות שעשויות להתעורר במהלך העלאת וטיפול בחשבוניות בפורטל הספקים. אנא לחץ על השאלה הרלוונטית כדי לצפות בפתרון.</p>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                1. מספר הזמנת הרכש (PO) הוזן בצורה שגויה – איך ניתן לתקן?
+            </button>
+            <div class="accordion-content">
+                <p>
+                    מספר הזמנת הרכש שהוזן אינו ניתן לתיקון לאחר שליחת החשבונית. יש להעלות חשבונית חדשה עם מספר ה-PO נכון. חשוב לציין כי לא ניתן לשלוח את אותה החשבונית מחדש דרך הפורטל. במקרה כזה יש לשלוח את החשבונית לאחד מכתובות המייל הרלוונטיות בהתאם לקוד החברה. בעתיד אנו מתכננים להרחיב את אפשרויות הטיפול דרך הפורטל, כך שגם מצבים כאלה יוכלו להיפתר בצורה פשוטה ומהירה יותר.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                2. מטבע החשבונית צוין בצורה לא נכונה
+            </button>
+            <div class="accordion-content">
+                <p>
+                    לצערנו, לא ניתן לשנות את המטבע דרך האתר. עם זאת, בעת ה<strong>פוסטינג</strong>, הצוות שלנו יעדכן את המטבע ידנית במערכת. אם המטבע מצוין בצורה נכונה על גבי החשבונית עצמה – אין צורך לשלוח חשבונית נוספת.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                3. הועלתה חשבונית כפולה
+            </button>
+            <div class="accordion-content">
+                <p>
+                    הפורטל <strong>לא</strong> מאפשר להעלות את אותה חשבונית פעמיים עם אותו מספר – וזה אחד היתרונות בשימוש בו. במקרה שהחשבוניות נשלחו עם מספרים שונים, אחת מהן תידחה אוטומטית כ-<strong>rejected</strong>. אין צורך לבצע שום פעולה מצד הספק.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                4. תאריך החשבונית או תאריך האספקה שגוי
+            </button>
+            <div class="accordion-content">
+                <p>
+                    הצוות פוסטינג צריך לשנות את זה ידני לפי המספר שרשום בחשבונית בעצמה. אין צורך בפעולות נוספות מצד של ספק.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                5. במקום זיכוי נרשמה חשבונית רגילה או להפך
+            </button>
+            <div class="accordion-content">
+                <p>
+                    הצוות פוסטינג צריך לשנות את זה ידני לפי המספר שרשום בחשבונית בעצמה. אין צורך בפעולות נוספות מצד של ספק.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                6. אין מספר הקצאה
+            </button>
+            <div class="accordion-content">
+                <p>
+                    האם בטעות בחשבונית בעצמה לא כתוב את ה מספר הקצאה, תשלח בבקשה את החשבונית למייל של נסטלה ILVendors… לפי קוד החברה.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                7. בעת העלאת המסמך מופיעה שגיאה שהמסמך כבר קיים במערכת – אך בפועל הוא לא מופיעה
+            </button>
+            <div class="accordion-content">
+                <p>
+                    אם אתם בטוחים שלא העליתם את החשבונית הזאת בעבר, אנו מציעים להוסיף נקודה למספר ה-Reference ולהעלות את החשבונית מחדש. אפשרות נוספת היא לפנות לתמיכה הטכנית של חברת CloudERP: <a href="mailto:support@clouderp.io">support@clouderp.io</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                8. יש לשלוח את החשבונית מחדש (ללא טעויות), אך היא כבר קיימת במערכת כ-rejected
+            </button>
+            <div class="accordion-content">
+                <p>
+                    צריך לשלוח את החשבונית לאחד המיילים לפי ה-Company Code.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                9. יש לשלוח את החשבונית מחדש (ללא טעויות), אך היא כבר קיימת במערכת כ-posted
+            </button>
+            <div class="accordion-content">
+                <p>
+                    העם החשבונית קבר בסטטוס נרשמת יש לשלוח את החשבונית תקנה לקניין שהוא ישחרר את החשבונית.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                10. יש לשלוח את החשבונית מחדש (ללא טעויות), אך היא כבר נמצאת במערכת בתהליך פוסטינג עדיין ללא מספר MM
+            </button>
+            <div class="accordion-content">
+                <p>
+                    אנא לשלוח את החשבונית תקנה ל [כתובת מייל רלוונטית].
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                11. המסמך עבר פוסטינג וקלירינג ללא תשלום (מסמך קלירינג שמתחיל בספרה 6) – המערכת לא מקבלת כפילות
+            </button>
+            <div class="accordion-content">
+                <p>
+                    יש לשלוח חשבונית והסברה קצרה ל- <a href="mailto:olga.teplov@il.nestle.com">olga.teplov@il.nestle.com</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                12. החשבונית נשלחה עם מספר אסמכתא לקוד ספק שגוי: החשבונית עדיין בתהליך פוסטינג – איך ניתן לתקן?
+            </button>
+            <div class="accordion-content">
+                <p>
+                    הצוות פוסטינג צריך לשנות את זה ידני לפי המספר שרשום בחשבונית בעצמה. אין צורך בפעולות נוספות מצד של ספק.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">
+                13. תיקון טעות במספר ה-Reference או קוד ספק שגוי
+            </button>
+            <div class="accordion-content">
+                <p>
+                    <strong>אפשרות א׳:</strong> אנו מציעים להוסיף נקודה למספר ה-Reference ולהעלות את החשבונית מחדש.
+                    <br><br>
+                    <strong>אפשרות ב׳:</strong> אם מספר המסמך השגוי מצוין על החשבונית עצמה – אנא לשלוח את החשבונית ל-ILVENDORS לפי הקוד הספק, אז נציג צוות התמיכה יפנה במייל לצוות הפוסטינג (Generic Mailbox) ויבקש למחוק את החשבונית השגויה.
+                </p>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 40px; color: #6C757D;">
+            **לכל שאלה נוספת, אנא פנו לגורם המטפל הרלוונטי.**
+        </p>
+
+    </div>
+
+    <script>
+        /* JavaScript for Accordion Functionality */
+        document.addEventListener('DOMContentLoaded', function() {
+            var accordionButtons = document.querySelectorAll('.accordion-button');
+
+            accordionButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    // Toggle the 'active' class on the clicked button
+                    this.classList.toggle('active');
+
+                    // Get the content panel
+                    var content = this.nextElementSibling;
+
+                    // Close other open panels
+                    accordionButtons.forEach(function(otherButton) {
+                        if (otherButton !== button && otherButton.classList.contains('active')) {
+                            otherButton.classList.remove('active');
+                            otherButton.nextElementSibling.style.maxHeight = 0;
+                            otherButton.nextElementSibling.style.padding = '0 20px'; // Reset padding when closing
+                        }
+                    });
+
+                    // Toggle the content panel visibility (maxHeight trick)
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.style.padding = '0 20px'; // Reset padding when closing
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        content.style.padding = '20px 20px'; // Set padding when opening
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
